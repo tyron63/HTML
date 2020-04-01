@@ -1,39 +1,54 @@
-.card img{
-    align-self: center;
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
+/* this is for my nav.bar*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
 }
-.card{
-    margin: 10px 10px 10px;
-    padding: 0px;
+.topnav a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-}
-  
-.title {
-    color: grey;
-    font-size: 18px;
-}
-  
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-  
-a {
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
     color: black;
 }
+.topnav a.active {
+    background-color: rgb(192, 24, 24);
+    color: white;
+}
+
+/*search bar button stuff*/ 
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
   
-button:hover, a:hover {
-    opacity: 0.7;
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
 }
