@@ -5,6 +5,7 @@
           Web Design End-of-module Project
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="C:\Users\User\Desktop\Repo file\Html\Web Design End-of-module Project\Web page.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -52,22 +53,24 @@
         </style>
     </head>
     <body style="https://wallpaperplay.com/walls/full/3/5/7/153652.jpg" weight="100px" height="120px">
-        <!--my nav. bar-->
+        <!--my nav.bar with a search.bar within it -->
         <div class="topnav">
           <a class="active" href="#home">Home</a>
           <a href="#news feed">News Feed</a>
           <a href="#user">User</a>
           <a href="#admin">Admin</a>
+          <input type="text" placeholder="Search..">
         </div>        
 
-        <!--cards section-->
+        <!--cards section start-->
+        <!--all the deatails you see upfront of the page-->
         <div class="containerout">
             <div class="row">
               <button type="button" class="btn col-3" data-toggle="modal" data-target="#myModal1">
                 <div class="card">
                   <img src="https://i.pravatar.cc/400?img=13" alt="Avatar" style="width:100%">
                   <div class="containerin">
-                    <h4><b>John Jackson</b></h4>
+                    <u><h4><b>John Jackson</b></h4></u>
                     <p><b>Email:</b>jj12@gmail.com</p>
                     <p><b>Cell:</b>072 067 9061</p>
                     <p><b>Landline:</b>021 124 3240</p>
@@ -79,7 +82,7 @@
                 <div class="card">
                   <img src="https://i.pravatar.cc/400?img=10" alt="Avatar" style="width:100%">
                     <div class="containerin">
-                      <h4><b>Jennifer Berman</b></h4>
+                      <u><h4><b>Jennifer Berman</b></h4></u>
                       <p><b>Email:</b>jennyb94@gmail.com</p>
                       <p><b>Cell:</b>082 924 3657</p>
                       <p><b>Landline:</b>021 547 6532</p>
@@ -91,7 +94,7 @@
                 <div class="card">
                   <img src="https://i.pravatar.cc/400?img=38" alt="Avatar" style="width:100%">
                     <div class="containerin">
-                      <h4><b>Viata Fredricks</b></h4>
+                      <u><h4><b>Viata Fredricks</b></h4></u>
                       <p><b>Email:</b>viataf@gmail.com</p>
                       <p><b>Cell:</b>082 237 9785</p>
                       <p><b>Landline:</b>021 512 4826</p>
@@ -101,9 +104,9 @@
 
               <button type="button" class="btn col-3" data-toggle="modal" data-target="#myModal4">
                 <div class="card">
-                  <img src="https://i.pravatar.cc/400?img=54" alt="Avatar" style="width:100%">
+                  <img src="https://i.pravatar.cc/400?img=54" alt="Avatar" style="border-radius: 50%;">
                     <div class="containerin">
-                      <h4><b>Billy Bones</b></h4>
+                      <u><h4><b>Billy Bones</b></h4></u>
                       <p><b>Email:</b>billyb78@gmail.com</p>
                       <p><b>Cell:</b>064 251 5452</p>
                       <p><b>Landline:</b>021 468 7524</p>
@@ -111,22 +114,26 @@
                 </div>
               </button>
             </div>
+            <!--card section end here-->
 
             <!--del profile button section-->
             <div class="row">
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: rgb(255, 15, 15);">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
-                <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color:rgb(0, 0, 0)">Delete Profile</button></div>
+                <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
             </div>
         </div>
+            <!--profile del button end here-->
         
+        <!--this is the button to create a new modal-->
         <div class="row">
             <button type="button" class="btn btn-success col-3 margin" data-toggle="modal" data-target="#addnew" style="background-color: rgb(0, 0, 0);border: black ;">Add User Profile</button>
         </div>
-
+        
 
         <!--details of user profile modals-->
+        <!--adding the close button allow the exit button to come where you can close it -->
           <div id="myModal1" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -163,7 +170,7 @@
               <div class="modal-content">
 
                 <div class="modal-header">
-                <h4 class="modal-title">User Details</h4>
+                <h4 class="modal-title">Profile Details</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -194,8 +201,8 @@
               <div class="modal-content">
                 
                 <div class="modal-header">
-                <h4 class="modal-title">User Details</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Profile Details</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 
                 <div class="modal-body">
@@ -225,7 +232,7 @@
               <div class="modal-content">
 
                 <div class="modal-header">
-                <h4 class="modal-title">User Details</h4>
+                <h4 class="modal-title">Profile Details</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -249,6 +256,7 @@
               </div>
             </div>
           </div>
+          <!--details of the profile modal end here-->
 
         
         <!--del profile modal-->
@@ -274,13 +282,13 @@
             </div>
         </div>
 
-        <!--adding a user form-->
+        <!--adding a user profile form-->
         <div class="modal" id="addnew">
             <div class="modal-dialog">
               <div class="modal-content">
 
                 <div class="modal-header">
-                  <h4 class="modal-title test-danger">Adding a user</h4>
+                  <h4 class="modal-title test-danger">Adding a user profile</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 
@@ -317,9 +325,10 @@
                       <label for="next of kin landline">Next of kin landline number:</label>
                       <input type="number" class="form-control" id="NOKL" placeholder="Enter next of kin landline number" name="NOKL">
                     </div>
-
+                    
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
+                <!--the adding a new profile end here-->
                 </div>
               </div>
             </div>
