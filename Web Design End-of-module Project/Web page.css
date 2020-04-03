@@ -16,7 +16,7 @@
     color: black;
 }
 .topnav a.active {
-    background-color: rgb(192, 24, 24);
+    background-color: rgb(255, 0, 0);
     color: white;
 }
 
@@ -40,7 +40,7 @@
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
+    background: transparent;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -58,7 +58,7 @@
       text-align: left;
       width: 100%;
       margin: 0;
-      padding: 14px;
+      padding: 10px;
     }
     .topnav input[type=text] {
       border: 1px solid #ccc;
