@@ -4,7 +4,7 @@
         <title>
           Web Design End-of-module Project
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="C:\Users\User\Desktop\Repo file\Html\Web Design End-of-module Project\Web page.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -24,38 +24,55 @@
               position: relative;
             }
             .containerout {
-                justify-content: space-evenly;
-                align-items: center;
-                margin: 10px;
-                }
+              justify-content: space-evenly;
+              align-items: center;
+              margin: 10px;
+            }
   
             .containerin {
-                padding: 2px 16px;
+              padding: 2px 16px;
             }
             .card {
-                border: 2px solid black;
-                align-self: flex-start;
-                align-items: center;
-                font-family: serif;
-                transition: 0.3s;
-                border-radius: 5px;
-                }
+              border: 2px solid black;
+              align-self: flex-start;
+              align-items: center;
+              font-family: serif;
+              transition: 0.3s;
+              border-radius: 5px;
+            }
             .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
             }
             img {
-                border-radius: 5px 5px 0 0;
-                align-self: center;
-                }
-            .margin {
-                margin-left: 460px;
+              border-radius: 5px 5px 0 0;
+              align-self: center;
             }
+            .margin {
+              margin-left: 460px;
+            }
+            @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+              width: 80%;
+              padding: 0;
+            }
+            .right {
+            width: 100%;
+            }
+          }
+          @media only screen and (max-width:500px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
         </style>
     </head>
     <body style="https://wallpaperplay.com/walls/full/3/5/7/153652.jpg" weight="100px" height="120px">
         <!--my nav.bar with a search.bar within it -->
         <div class="topnav">
-          <a class="active" href="#home">Home</a>
+          <a class="active" href="#profile user">Profile User</a>
+          <a href="#home">Home</a>
           <a href="#news feed">News Feed</a>
           <a href="#user">User</a>
           <a href="#admin">Admin</a>
@@ -128,7 +145,7 @@
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
             </div>
-      </div>
+          </div>
             <!--profile del button end here-->
         
         <!--this is the button to create a new modal-->
@@ -144,7 +161,8 @@
               <div class="modal-content">
 
                 <div class="modal-header">
-                  <h4 class="modal-title">Profile Details</h4>
+                  <h4 class="modal-title,"><u>Profile Details</u></h4>
+                    <class="btn btn-success col-3></class>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -175,7 +193,7 @@
               <div class="modal-content">
 
                 <div class="modal-header">
-                <h4 class="modal-title">Profile Details</h4>
+                <h4 class="modal-title"><u>Profile Details</u></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -206,7 +224,7 @@
               <div class="modal-content">
                 
                 <div class="modal-header">
-                  <h4 class="modal-title">Profile Details</h4>
+                  <h4 class="modal-title"><u>Profile Details</u></h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 
@@ -237,7 +255,7 @@
               <div class="modal-content">
 
                 <div class="modal-header">
-                <h4 class="modal-title">Profile Details</h4>
+                <h4 class="modal-title"><u>Profile Details</u></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -300,6 +318,10 @@
                 <div class="modal-body">
                   <form action="/action_page.php" class="space">
                     <div class="form-group">
+                      
+                      <label for="Picture">Profile Picture:</label>
+                      <input type="file" class="form-control" id="Picture" placeholder="Upload your profile image" name="Picture" required>
+                      
                       <label for="fname">First Name:</label>
                       <input type="fname" class="form-control" id="fname" placeholder="Enter Name" name="fname">
                             
