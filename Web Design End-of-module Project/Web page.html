@@ -1,91 +1,97 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <title>
-          Web Design End-of-module Project
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="C:\Users\User\Desktop\Repo file\Html\Web Design End-of-module Project\Web page.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <style>
-            body {
-              margin: 0;
-              font-family: Arial, Helvetica, sans-serif;
-              background-image: url("https://wallpaperplay.com/walls/full/3/5/7/153652.jpg");
-              background-color: #cccccc;
-              height: 550px;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-              position: relative;
-            }
-            .containerout {
-              justify-content: space-evenly;
-              align-items: center;
-              margin: 10px;
-            }
-  
-            .containerin {
-              padding: 2px 16px;
-            }
-            .card {
-              border: 2px solid black;
-              align-self: flex-start;
-              align-items: center;
-              font-family: serif;
-              transition: 0.3s;
-              border-radius: 5px;
-            }
-            .card:hover {
-              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
-            img {
-              border-radius: 5px 5px 0 0;
-              align-self: center;
-            }
-            .margin {
-              margin-left: 460px;
-            }
-            @media only screen and (max-width:800px) {
-            /* For tablets: */
-            .main {
-              width: 80%;
-              padding: 0;
-            }
-            .right {
-            width: 100%;
-            }
+      <title>
+        Web Design End-of-module Project
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="C:\Users\User\Desktop\Repo file\Frontend\Html\Web Design End-of-module Project\Webpage.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <style>
+          body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://wallpaperplay.com/walls/full/3/5/7/153652.jpg");
+            background-color: #cccccc;
+            height: 550px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
           }
-          @media only screen and (max-width:500px) {
+          .containerout {
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+          }
+
+          .containerin {
+            padding: 2px 16px;
+          }
+
+          .card {
+            border: 2px solid black;
+            align-self: flex-start;
+            align-items: center;
+            font-family: serif;
+            transition: 0.3s;
+            border-radius: 5px;
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+
+          img {
+            border-radius: 5px 5px 0 0;
+            align-self: center;
+          }
+
+          .margin {
+            margin-left: 460px;
+          }
+          
+          @media only screen and (max-width:800px) {
+          /* For tablets: */
+          .main {
+            width: 80%;
+            padding: 0;
+          }
+          .right {
+          width: 100%;
+          }
+        }
+        @media only screen and (max-width:500px) {
           /* For mobile phones: */
           .menu, .main, .right {
             width: 100%;
           }
         }
-        </style>
+      </style>
     </head>
-    <body style="https://wallpaperplay.com/walls/full/3/5/7/153652.jpg" weight="100px" height="120px">
+    <body style="https://wallpaperplay.com/walls/full/3/5/7/153652.jpg">
         <!--my nav.bar with a search.bar within it -->
         <div class="topnav">
-          <a class="active" href="#profile user">Profile User</a>
-          <a href="#home">Home</a>
+          <a class="active" href="#home">Home</a>
           <a href="#news feed">News Feed</a>
           <a href="#user">User</a>
           <a href="#admin">Admin</a>
+          <!-- Search bar moved to the right -->
           <div class="search-container">
-            <form action="/action_page.php">
+            <form action="#search">
+              <button type="submit" ><i class="fa fa-search"></i></button>
               <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
-        </div>        
+        </div>             
 
         <!--cards section start-->
-        <!--all the deatails you see upfront of the page-->
+        <!--all the deatails you see upfront of the page in the cards-->
         <div class="containerout">
             <div class="row">
               <button type="button" class="btn col-3" data-toggle="modal" data-target="#myModal1">
@@ -93,7 +99,7 @@
                   <img src="https://i.pravatar.cc/400?img=13" alt="Avatar" style="width:100%">
                   <div class="containerin">
                     <u><h4><b>John Jackson</b></h4></u>
-                    <p><b>Email:</b>jj12@gmail.com</p>
+                    <p><b>Email:</b>johnj12@gmail.com</p>
                     <p><b>Cell:</b>072 067 9061</p>
                     <p><b>Landline:</b>021 124 3240</p>
                   </div>
@@ -136,11 +142,11 @@
                 </div>
               </button>
             </div>
-            <!--card section end here-->
+            <!--card section end here and the details init-->
 
             <!--del profile button section-->
             <div class="row">
-                <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: rgb(255, 15, 15);">Delete Profile</button></div>
+                <div class="col-3"><button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#delete" style="background-color: rgb(255, 15, 15);">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
                 <div class="col-3"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete" style="background-color: black;">Delete Profile</button></div>
@@ -150,12 +156,12 @@
         
         <!--this is the button to create a new modal-->
         <div class="row">
-            <button type="button" class="btn btn-success col-3 margin" data-toggle="modal" data-target="#addnew" style="background-color: rgb(0, 0, 0);border-color: rgb(255, 0, 0);">Add User Profile</button>
+          <button type="button" class="btn btn-success col-3 margin" data-toggle="modal" data-target="#addnew" style="background-color: rgb(0, 0, 0); border-color: rgb(255, 0, 0);">Add User Profile</button>
         </div>
         
 
         <!--details of user profile modals-->
-        <!--adding the close button allow the exit button to come where you can close it -->
+        <!--adding the exit button to come where you can close the showing of the details -->
           <div id="myModal1" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -167,9 +173,9 @@
                 </div>
 
                 <div class="modal-body">
-                    <pre>
+                  <pre>
         <b>Adress:</b>
-        5 Rosewoodstreet
+        5 Rosewood Street
         Netreg
         Bonteheuwel 
         7764
@@ -181,7 +187,7 @@
         063 542 9187
         <b>Next of kin email:</b>
         Mjackson@gmail.com
-                    </pre>
+                  </pre>
                 </div>
               </div>
             </div>
@@ -316,9 +322,8 @@
                 </div>
                 
                 <div class="modal-body">
-                  <form action="/action_page.php" class="space">
-                    <div class="form-group">
-                      
+                  <form action="#" class="space">
+                    <div class="form-group">  
                       <label for="Picture">Profile Picture:</label>
                       <input type="file" class="form-control" id="Picture" placeholder="Upload your profile image" name="Picture" required>
                       
@@ -352,7 +357,7 @@
                       <label for="next of kin landline">Next of kin landline number:</label>
                       <input type="number" class="form-control" id="NOKL" placeholder="Enter next of kin landline number" name="NOKL">
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 <!--the adding a new profile end here-->
@@ -360,5 +365,5 @@
               </div>
             </div>
           </div>
-    </body>
+      </body>
   </html>
